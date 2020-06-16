@@ -4,12 +4,12 @@ require 'rdkafka'
 config = {
           :"bootstrap.servers" => ENV['CLOUDKARAFKA_BROKERS'],
           :"group.id"          => "cloudkarafka-example",
-          :"sasl.username"     => ENV['CLOUDKARAFKA_USERNAME'],
-          :"sasl.password"     => ENV['CLOUDKARAFKA_PASSWORD'],
+          :"sasl.username"     => ENV['vytk2wsg'],
+          :"sasl.password"     => ENV['OVGLNQMBkGJaLUz0TPMcN1grFw-GKRGK'],
           :"security.protocol" => "SASL_SSL",
           :"sasl.mechanisms"   => "SCRAM-SHA-256"
 }
-topic = "#{ENV['CLOUDKARAFKA_TOPIC_PREFIX']}test"
+topic = "#{ENV['vytk2wsg-']}test"
 
 rdkafka = Rdkafka::Config.new(config)
 producer = rdkafka.producer
